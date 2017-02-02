@@ -1,6 +1,6 @@
 <?php
 
-namespace App/Http/Models;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -10,12 +10,25 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
+     * Trait para popular o ID com Uuid.
+     */
+    use \App\Globals\Uuids;
+
+    /**
+     * Indicates if the IDs are auto-incrementing.
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nome', 'email', 'password', 'numero_cartao_fidelidade', 'cpf', 'telefone'
     ];
 
     /**
@@ -24,6 +37,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token','numero_cartao_fidelidade', 'cpf', 'telefone'
     ];
 }
