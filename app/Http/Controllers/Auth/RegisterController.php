@@ -89,6 +89,6 @@ class RegisterController extends Controller
             'telefone' => $data->telefone,
         ]);
 
-        return view('home');
+        return view('auth.login');
     }
 }
