@@ -18,8 +18,3 @@
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
-#<IfModule mod_rewrite.c>
-#    RewriteEngine on
-#    RewriteCond %{REQUEST_URI} !^public
-#    RewriteRule ^(.*)$ public/$1 [L]
-#</IfModule>
