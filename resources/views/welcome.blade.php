@@ -34,9 +34,9 @@
 
                 @if (Auth::check())
                     <div class="links">
-                        <a href="https://laravel.com/docs">Histórico</a>
-                        <a href="https://laracasts.com">Locais de Coleta</a>
-                        <a href="https://laravel-news.com">Dicas de Descarte</a>
+                        <a href="/historico">Histórico</a>
+                        <a href="/locais_coleta">Locais de Coleta</a>
+                        <a href="/dicas_descarte">Dicas de Descarte</a>
                     </div>
                 @endif
             </div>
