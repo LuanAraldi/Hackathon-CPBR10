@@ -43,27 +43,24 @@ body {
     width: 100%;
     line-height:1.5em;
     padding: 2.5em 0;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
+    font-size: 160%;
 }
 
 .content {
     padding-top: 13em;
 }
 
-.caixas-inicio {
-    margin: 0 auto;
-}
-
 .caixa-inicio-escura{
-    background-color: #196c4b;
-    height: 10em;
+    background-color: #00a000;
+    height: 14em;
     padding: 2em;
     margin: 2em 4em;
  }
 
 .caixa-inicio-clara{
-    background-color: #2ca02c;
-    height: 10em;
+    background-color: #00f600;
+    height: 14em;
     padding: 2em;
     margin: 2em 4em;
 }
@@ -71,4 +68,32 @@ body {
 .texto-caixas {
     text-align: justify;
     color: white;
+    font-size: 130%;
+}
+
+footer {
+    margin-top: 3em;
+    padding-top: 2.5em;
+    background-color: #00f600;
+    height: 12em;
+    width: 100%;
+}
+
+.texto-footer {
+    color: white;
+    font-size: 160%;
+}
+
+.titulo-footer {
+    color: white;
+    font-size: 260%;
+}
+
+.texto-footer a {
+    color: white;
+}
+
+.imagens-principal {
+    height: 12em;
+    margin:0;
 }
