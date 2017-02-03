@@ -27,40 +27,29 @@
         </div>
     @endif
 
-    <div class="content">
-        <div class="title m-b-md">
-            The Big Hackaton #CPBR10
-        </div>
+        <div id="map" style="width: 500px; height: 500px;"></div>
+        <script>
+            function initMap() {
+                var myLatLng = {lat: -25.363, lng: 131.044};
 
-        <div class="table-responsive">
-            <table style="width:100%" class="table">
-                <thead>
-                <tr>
-                    <th>Tipo</th>
-                    <th>Material</th>
-                    <th>Quantidade</th>
-                    <th>Local</th>
-                    <th>Data</th>
-                </tr>
-                </thead>
-                @foreach($pontos as $ponto)
-                    <tbody class="text-left">
-                    <tr>
-                        <td>{{$ponto->tipo}}</td>
-                        <td>{{$ponto->material}}</td>
-                        @if($ponto->quantidade)
-                            <td>{{$ponto->quantidade}}</td>
-                        @else
-                            <td>{{$ponto->peso}}</td>
-                        @endif
-                        <td>{{$ponto->nome_local}}</td>
-                        <td>{{$ponto->created_at}}</td>
-                    </tr>
-                    </tbody>
-                @endforeach
-            </table>
-        </div>
-    </div>
+                // Create a map object and specify the DOM element for display.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLatLng,
+                    scrollwheel: false,
+                    zoom: 4
+                });
+
+                // Create a marker and set its position.
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: myLatLng,
+                    title: 'Hello World!'
+                });
+            }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIXjMUu6CP7IQKnRW1RPe-lBPEK5t1DFk&callback=initMap"
+                async defer></script>
 </div>
 </body>
 </html>

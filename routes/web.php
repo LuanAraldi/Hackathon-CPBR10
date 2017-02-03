@@ -26,3 +26,21 @@ Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
 
 Route::get('/historico', 'HistoricoController@index');
+
+// Rotas Locais
+Route::post('/api/local/create', 'Api\LocaisController@create');
+
+Route::post('/api/local/retrieve', 'Api\LocaisController@retrieve');
+
+Route::post('/api/local/update', 'Api\LocaisController@update');
+
+Route::post('/api/local/delete', 'Api\LocaisController@delete');
+
+// Rotas Pontos
+Route::post('/api/ponto/create', 'Api\PontosController@create');
+
+Route::post('/api/ponto/retrieve', 'Api\PontosController@retrieve');
+
+Route::post('/api/ponto/update', 'Api\PontosController@update');
+
+Route::post('/api/ponto/delete', 'Api\PontosController@delete');
