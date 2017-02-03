@@ -118,3 +118,7 @@ footer {
     color: #00f600;
     font-size: 7em;
 }
+
+.login-view, .register-view {
+    margin-top: 12em;
+}
