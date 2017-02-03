@@ -24,7 +24,8 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="row">
+                    <div class="row"></div>
+                    <div class="row caixas-inicio">
                         <div class="col-md-3 caixa-inicio-escura">
                             <p class="texto-caixas"><strong>Florestas tropicais</strong> costumavam cobrir cerca de <strong>15% da área terrestre</strong> do planeta.</p>
                             <p class="texto-caixas"><strong>Hoje</strong>, apenas <strong>7%</strong></p>
@@ -38,20 +39,26 @@
                     </div>
                 </div>
                 <div class="container">
-                        <div class=" imagens-principal">
-                            <div class="col-md-3">
-                                <img class="img-responsive" src="/images/tartaruga-lixo.jpg" alt="tartaruga morre por lixo">
-                            </div>
-                            <div class="col-md-3">
-                                <img class="img-responsive" src="/images/pombo-lixo.jpg" alt="pombo morre por lixo">
-                            </div>
-                            <div class="col-md-3">
-                                <img class="img-responsive" src="/images/macaco-lixo.jpg" alt="macaco morre por lixo">
-                            </div>
-                            <div class="col-md-3">
-                                <img class="img-responsive" src="/images/capivara-lixo.png" alt="capivara morre por lixo"></div>
-                            </div>
+                    <div class="row">
+                        <h3 class="text-home-left"><strong>Não</strong> faça <span class="vitimas">vitimas</span>.</h3>
+                    </div>
+                    <div class="row imagens-principal">
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="/images/tartaruga-lixo.jpg" alt="tartaruga morre por lixo">
                         </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="/images/pombo-lixo.jpg" alt="pombo morre por lixo">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="/images/macaco-lixo.jpg" alt="macaco morre por lixo">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-responsive" src="/images/capivara-lixo.png" alt="capivara morre por lixo"></div>
+                        </div>
+                    <div class="row">
+                        <h3 class="text-home-right">Faça <strong>sua</strong> <span class="parte">parte</span>.</h3>
+                    </div>
+                    </div>
                 </div>
             </div>
     </body>

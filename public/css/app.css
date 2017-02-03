@@ -38,12 +38,12 @@ body {
 
 .banner-principal {
     color: #00f600;
-    border-top: 0.3em #00f600 solid;
-    border-bottom: 0.3em #00f600 solid;
+    border-top: 0.2em #00f600 solid;
+    border-bottom: 0.2em #00f600 solid;
     width: 100%;
     line-height:1.5em;
     padding: 2.5em 0;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     font-size: 160%;
 }
 
@@ -51,6 +51,9 @@ body {
     padding-top: 13em;
 }
 
+.caixas-inicio {
+    margin-bottom: 4em;
+}
 .caixa-inicio-escura{
     background-color: #00a000;
     height: 14em;
@@ -93,7 +96,25 @@ footer {
     color: white;
 }
 
-.imagens-principal {
-    height: 12em;
-    margin:0;
+.imagens-principal img {
+    height: 16em;
+    width: 30em;
+    margin: 0;
+}
+
+.text-home-left {
+    width: 100%;
+    padding: 0.1em 0.2em;
+    border-top: 0.005em #CCC solid;
+    text-align: left;
+    color: #00f600;
+    font-size: 7em;
+}
+
+.text-home-right {
+    width: 100%;
+    border-bottom: 0.005em #CCC solid;
+    text-align: right;
+    color: #00f600;
+    font-size: 7em;
 }
