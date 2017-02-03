@@ -1,4 +1,4 @@
-@section('head')
+
     <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -8,16 +8,16 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'The Big Hackaton #CPBR10') }}</title>
+        <title>{{ config('app.name', 'Moeda Verde') }}</title>
 
         <!-- Styles -->
+        <link href="/css/bootstrap.css" rel="stylesheet">
         <link href="/css/app.css" rel="stylesheet">
 
         <!-- Scripts -->
         <script>
             window.Laravel = {!! json_encode([
-                'csrfToken' => csrf_token(),
-            ]) !!};
+            'csrfToken' => csrf_token(),
+        ]) !!};
         </script>
     </head>
-@endsection

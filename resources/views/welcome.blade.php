@@ -1,37 +1,43 @@
-<!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <link href="/css/app.css" rel="stylesheet">
-    </head>
+@section('content')
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="">Teste</a>
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Registrar</a>
-                    @endif
-                </div>
-            @endif
-
             <div class="content">
-                <div class="title m-b-md">
-                    The Big Hackaton #CPBR10
+                <div class="banner-principal">
+                    <h1 class="titulo-principal">Economize dinheiro ajudando o meio ambiente!</h1>
+                    <p>Com a <strong>moeda verde</strong>, você agora é <strong>recompensado</strong> por suas <strong>ações</strong>.</p>
+                    <p>No descarte do seu <strong>lixo reciclável</strong>, você recebe <strong>pontos</strong> no seu <strong>cartão mais</strong></strong>.</p>
+                    <h2><strong>Ajude</strong> o planeta! Ajude <strong>você</strong>!</h2>
                 </div>
-
+                <div class="caixas-inicio">
+                    <div class="row">
+                        <div class="col-md-3 caixa-inicio-clara">
+                            <p class="texto-caixas"><strong>Florestas tropicais</strong> costumavam cobrir cerca de <strong>15% da área terrestre</strong> do planeta.</p>
+                            <p class="texto-caixas"><strong>Hoje</strong>, apenas <strong>7%</strong></p>
+                        </div>
+                        <div class="col-md-3 caixa-inicio-escura">
+                            <p class="texto-caixas">De acordo com estimativas da <strong>ONU</strong>, cerca de <strong>12 milhões</strong> de hectares de terras agrícolas são <strong>degradados</strong> seriamente todos os anos</p>
+                        </div>
+                        <div class="col-md-3 caixa-inicio-clara">
+                            <p class="texto-caixas"><strong>Ambientalistas</strong> afirmam que, na <strong>Amazônia</strong>, uma área de aproximadamente <strong>50 mil km²</strong> é atingida por <strong>queimadas</strong> no período de um ano.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixas-inicio">
+                    <div class="row">
+                        <div class="col-md-3 caixa-inicio-escura">
+                            <p class="texto-caixas"><strong>Florestas tropicais</strong> costumavam cobrir cerca de <strong>15% da área terrestre</strong> do planeta.</p>
+                            <p class="texto-caixas"><strong>Hoje</strong>, apenas <strong>7%</strong></p>
+                        </div>
+                        <div class="col-md-3 caixa-inicio-clara">
+                            <p class="texto-caixas">De acordo com estimativas da <strong>ONU</strong>, cerca de <strong>12 milhões</strong> de hectares de terras agrícolas são <strong>degradados</strong> seriamente todos os anos</p>
+                        </div>
+                        <div class="col-md-3 caixa-inicio-escura">
+                            <p class="texto-caixas"><strong>Ambientalistas</strong> afirmam que, na <strong>Amazônia</strong>, uma área de aproximadamente <strong>50 mil km²</strong> é atingida por <strong>queimadas</strong> no período de um ano.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagens-principal"></div>
                 @if (Auth::check())
                     <div class="links">
                         <a href="/historico">Histórico</a>
@@ -40,6 +46,5 @@
                     </div>
                 @endif
             </div>
-        </div>
     </body>
-</html>
+@endsection
