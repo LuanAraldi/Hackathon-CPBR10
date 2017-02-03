@@ -9,7 +9,7 @@
                     <p>No descarte do seu <strong>lixo reciclável</strong>, você recebe <strong>pontos</strong> no seu <strong>cartão mais</strong></strong>.</p>
                     <h2><strong>Ajude</strong> o planeta! Ajude <strong>você</strong>!</h2>
                 </div>
-                <div class="caixas-inicio">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-3 caixa-inicio-clara">
                             <p class="texto-caixas"><strong>Florestas tropicais</strong> costumavam cobrir cerca de <strong>15% da área terrestre</strong> do planeta.</p>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="caixas-inicio">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-3 caixa-inicio-escura">
                             <p class="texto-caixas"><strong>Florestas tropicais</strong> costumavam cobrir cerca de <strong>15% da área terrestre</strong> do planeta.</p>
